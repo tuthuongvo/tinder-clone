@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tinder Clone</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="home-index bg-gray-100">
+  <header class="header sticky top-0 bg-gradient-to-r from-blue-500 to-cyan-500">
+    <div class="container">
+      <div class="py-3 relative">
+        <a href="#" class="absolute cursor-pointer top-3 left-0">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" class="stroke-white size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+          </svg>
+        </a>
+        <div class="close-modal absolute cursor-pointer top-3 left-12 hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            class="stroke-white size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        
+        </div>
+        <div class="text-center text-white">Tìm quanh đây</div>
+      </div>
+    </div>
+
+  </header>
+  <div class="page-main">
+    <div class="toolbar cursor-pointer shadow bg-white w-full py-2">
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <div class="toolbar-label flex items-center gap-3">
+            <div class="title font-medium text-sm">Tìm bạn</div>
+            <div class="list-attribute">
+              <ul class="flex gap-1 text-xs text-gray-400">
+                <li>Nam - Nữ,</li>
+                <li>15 - 80 tuổi</li>
+              </ul>
+            </div>
+          </div>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
+              class="stroke-gray-400 size-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="list-user bg-white mt-4">
+      <div class="item cursor-pointer border-b border-b-gray-200">
+        <div class="container">
+          <div class="py-3 sm:py-4">
+            <div class="flex items-center space-x-4">
+              <div class="flex-shrink-0">
+                <img class="w-10 h-10 rounded-full" src="images/people/profile-picture-1.jpg"
+                  alt="Neil image">
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                  Anh Duy
+                </p>
+                <div class="text-sm flex items-center gap-2 text-gray-500 truncate dark:text-gray-400">
+                  <div class="gender flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-blue-500 size-3" viewBox="0 0 351.778 351.778" >
+                      <path
+                        d="M321.778,95.024l30-0.049l-0.154-94.821L256.802,0l-0.049,30l43.741,0.071l-58.583,58.583  c-26.385-21.595-59.13-33.339-93.68-33.339c-39.594,0-76.817,15.419-104.814,43.417C15.419,126.729,0,163.953,0,203.547  s15.419,76.818,43.416,104.815s65.221,43.416,104.814,43.416s76.818-15.419,104.815-43.416  c54.215-54.215,57.572-140.324,10.073-198.49l58.588-58.588L321.778,95.024z M231.833,287.149  c-22.331,22.331-52.021,34.629-83.603,34.629S86.96,309.48,64.629,287.149C42.298,264.818,30,235.128,30,203.547  s12.298-61.271,34.629-83.602s52.021-34.629,83.602-34.629c31.581,0,61.271,12.298,83.603,34.629  C277.931,166.044,277.931,241.051,231.833,287.149z" />
+                    </svg>
+                    <div class="age text-gray-400 text-xs">26</div>
+                  </div>
+                  <div class="maps flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
+                      class="stroke-gray-400 size-3">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                    <div class="spacing text-gray-400 text-xs">500m</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item cursor-pointer border-b border-b-gray-200">
+        <div class="container">
+          <div class="py-3 sm:py-4">
+            <div class="flex items-center space-x-4">
+              <div class="flex-shrink-0">
+                <img class="w-10 h-10 rounded-full" src="images/people/profile-picture-2.jpg"
+                  alt="Neil image">
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                  Phan Quốc Kha
+                </p>
+                <div class="text-sm flex items-center gap-2 text-gray-500 truncate dark:text-gray-400">
+                  <div class="gender flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-blue-500 size-3" viewBox="0 0 351.778 351.778">
+                      <path
+                        d="M321.778,95.024l30-0.049l-0.154-94.821L256.802,0l-0.049,30l43.741,0.071l-58.583,58.583  c-26.385-21.595-59.13-33.339-93.68-33.339c-39.594,0-76.817,15.419-104.814,43.417C15.419,126.729,0,163.953,0,203.547  s15.419,76.818,43.416,104.815s65.221,43.416,104.814,43.416s76.818-15.419,104.815-43.416  c54.215-54.215,57.572-140.324,10.073-198.49l58.588-58.588L321.778,95.024z M231.833,287.149  c-22.331,22.331-52.021,34.629-83.603,34.629S86.96,309.48,64.629,287.149C42.298,264.818,30,235.128,30,203.547  s12.298-61.271,34.629-83.602s52.021-34.629,83.602-34.629c31.581,0,61.271,12.298,83.603,34.629  C277.931,166.044,277.931,241.051,231.833,287.149z" />
+                    </svg>
+                    <div class="age text-gray-400 text-xs">26</div>
+                  </div>
+                  <div class="maps flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      class="stroke-gray-400 size-3">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                    <div class="spacing text-gray-400 text-xs">700m</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item cursor-pointer border-b border-b-gray-200">
+        <div class="container">
+          <div class="py-3 sm:py-4">
+            <div class="flex items-center space-x-4">
+              <div class="flex-shrink-0">
+                <img class="w-10 h-10 rounded-full" src="images/people/profile-picture-3.jpg"
+                  alt="Neil image">
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                  Lan Ngọc
+                </p>
+                <div class="text-sm flex items-center gap-2 text-gray-500 truncate dark:text-gray-400">
+                  <div class="gender flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-blue-500 size-3" viewBox="-4.5 0 24 24">
+                      <path
+                        d="m15.426 7.714c0 .03.001.065.001.1 0 1.951-.751 3.727-1.98 5.054l.004-.005c-1.217 1.383-2.925 2.31-4.848 2.509l-.032.003v3.482h3 .016c.228 0 .413.185.413.413v.017-.001.857.016c0 .228-.185.413-.413.413-.006 0-.011 0-.017 0h.001-3v3 .016c0 .228-.185.413-.413.413-.006 0-.011 0-.017 0h.001-.857c-.005 0-.011 0-.016 0-.228 0-.413-.185-.413-.413 0-.006 0-.011 0-.017v.001-3h-3c-.005 0-.011 0-.016 0-.228 0-.413-.185-.413-.413 0-.006 0-.011 0-.017v.001-.857c0-.005 0-.011 0-.016 0-.228.185-.413.413-.413h.017-.001 3v-3.482c-1.378-.143-2.619-.639-3.658-1.394l.022.015c-1.96-1.42-3.22-3.701-3.22-6.277 0-.223.009-.444.028-.662l-.002.028c.102-1.245.49-2.381 1.099-3.367l-.019.033c.621-1.024 1.439-1.867 2.408-2.499l.03-.018c.934-.619 2.051-1.039 3.254-1.175l.034-.003c.273-.034.589-.054.909-.054 4.245 0 7.686 3.441 7.686 7.686v.03-.002zm-13.716 0c0 .026-.001.056-.001.087 0 1.629.674 3.101 1.759 4.152l.002.001c1.083 1.089 2.583 1.762 4.24 1.762s3.157-.674 4.24-1.762c1.086-1.052 1.761-2.524 1.761-4.153 0-.031 0-.061-.001-.092v.005c0-.026.001-.056.001-.087 0-1.629-.674-3.101-1.759-4.152l-.002-.001c-1.083-1.089-2.583-1.762-4.24-1.762s-3.157.674-4.24 1.762c-1.085 1.052-1.758 2.523-1.758 4.151 0 .031 0 .063.001.094v-.005z" />
+                    </svg>
+                    <div class="age text-gray-400 text-xs">24</div>
+                  </div>
+                  <div class="maps flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      class="stroke-gray-400 size-3">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                    <div class="spacing text-gray-400 text-xs">600m</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item cursor-pointer border-b border-b-gray-200">
+        <div class="container">
+          <div class="py-3 sm:py-4">
+            <div class="flex items-center space-x-4">
+              <div class="flex-shrink-0">
+                <img class="w-10 h-10 rounded-full" src="images/people/profile-picture-4.jpg"
+                  alt="Neil image">
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                  Minh Ngọc
+                </p>
+                <div class="text-sm flex items-center gap-2 text-gray-500 truncate dark:text-gray-400">
+                  <div class="gender flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-blue-500 size-3" viewBox="-4.5 0 24 24">
+                      <path
+                        d="m15.426 7.714c0 .03.001.065.001.1 0 1.951-.751 3.727-1.98 5.054l.004-.005c-1.217 1.383-2.925 2.31-4.848 2.509l-.032.003v3.482h3 .016c.228 0 .413.185.413.413v.017-.001.857.016c0 .228-.185.413-.413.413-.006 0-.011 0-.017 0h.001-3v3 .016c0 .228-.185.413-.413.413-.006 0-.011 0-.017 0h.001-.857c-.005 0-.011 0-.016 0-.228 0-.413-.185-.413-.413 0-.006 0-.011 0-.017v.001-3h-3c-.005 0-.011 0-.016 0-.228 0-.413-.185-.413-.413 0-.006 0-.011 0-.017v.001-.857c0-.005 0-.011 0-.016 0-.228.185-.413.413-.413h.017-.001 3v-3.482c-1.378-.143-2.619-.639-3.658-1.394l.022.015c-1.96-1.42-3.22-3.701-3.22-6.277 0-.223.009-.444.028-.662l-.002.028c.102-1.245.49-2.381 1.099-3.367l-.019.033c.621-1.024 1.439-1.867 2.408-2.499l.03-.018c.934-.619 2.051-1.039 3.254-1.175l.034-.003c.273-.034.589-.054.909-.054 4.245 0 7.686 3.441 7.686 7.686v.03-.002zm-13.716 0c0 .026-.001.056-.001.087 0 1.629.674 3.101 1.759 4.152l.002.001c1.083 1.089 2.583 1.762 4.24 1.762s3.157-.674 4.24-1.762c1.086-1.052 1.761-2.524 1.761-4.153 0-.031 0-.061-.001-.092v.005c0-.026.001-.056.001-.087 0-1.629-.674-3.101-1.759-4.152l-.002-.001c-1.083-1.089-2.583-1.762-4.24-1.762s-3.157.674-4.24 1.762c-1.085 1.052-1.758 2.523-1.758 4.151 0 .031 0 .063.001.094v-.005z" />
+                    </svg>
+                    <div class="age text-gray-400 text-xs">26</div>
+                  </div>
+                  <div class="maps flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      class="stroke-gray-400 size-3">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                    <div class="spacing text-gray-400 text-xs">500m</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item cursor-pointer border-b border-b-gray-200">
+        <div class="container">
+          <div class="py-3 sm:py-4">
+            <div class="flex items-center space-x-4">
+              <div class="flex-shrink-0">
+                <img class="w-10 h-10 rounded-full" src="images/people/profile-picture-5.jpg"
+                  alt="Neil image">
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                  Trần Quân
+                </p>
+                <div class="text-sm flex items-center gap-2 text-gray-500 truncate dark:text-gray-400">
+                  <div class="gender flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-blue-500 size-3" viewBox="0 0 351.778 351.778">
+                      <path
+                        d="M321.778,95.024l30-0.049l-0.154-94.821L256.802,0l-0.049,30l43.741,0.071l-58.583,58.583  c-26.385-21.595-59.13-33.339-93.68-33.339c-39.594,0-76.817,15.419-104.814,43.417C15.419,126.729,0,163.953,0,203.547  s15.419,76.818,43.416,104.815s65.221,43.416,104.814,43.416s76.818-15.419,104.815-43.416  c54.215-54.215,57.572-140.324,10.073-198.49l58.588-58.588L321.778,95.024z M231.833,287.149  c-22.331,22.331-52.021,34.629-83.603,34.629S86.96,309.48,64.629,287.149C42.298,264.818,30,235.128,30,203.547  s12.298-61.271,34.629-83.602s52.021-34.629,83.602-34.629c31.581,0,61.271,12.298,83.603,34.629  C277.931,166.044,277.931,241.051,231.833,287.149z" />
+                    </svg>
+                    <div class="age text-gray-400 text-xs">26</div>
+                  </div>
+                  <div class="maps flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      class="stroke-gray-400 size-3">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                    <div class="spacing text-gray-400 text-xs">500m</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item cursor-pointer border-b border-b-gray-200">
+        <div class="container">
+          <div class="py-3 sm:py-4">
+            <div class="flex items-center space-x-4">
+              <div class="flex-shrink-0">
+                <img class="w-10 h-10 rounded-full" src="images/people/profile-picture-1.jpg"
+                  alt="Neil image">
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                  Quang Chiến
+                </p>
+                <div class="text-sm flex items-center gap-2 text-gray-500 truncate dark:text-gray-400">
+                  <div class="gender flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-blue-500 size-3" viewBox="0 0 351.778 351.778">
+                      <path
+                        d="M321.778,95.024l30-0.049l-0.154-94.821L256.802,0l-0.049,30l43.741,0.071l-58.583,58.583  c-26.385-21.595-59.13-33.339-93.68-33.339c-39.594,0-76.817,15.419-104.814,43.417C15.419,126.729,0,163.953,0,203.547  s15.419,76.818,43.416,104.815s65.221,43.416,104.814,43.416s76.818-15.419,104.815-43.416  c54.215-54.215,57.572-140.324,10.073-198.49l58.588-58.588L321.778,95.024z M231.833,287.149  c-22.331,22.331-52.021,34.629-83.603,34.629S86.96,309.48,64.629,287.149C42.298,264.818,30,235.128,30,203.547  s12.298-61.271,34.629-83.602s52.021-34.629,83.602-34.629c31.581,0,61.271,12.298,83.603,34.629  C277.931,166.044,277.931,241.051,231.833,287.149z" />
+                    </svg>
+                    <div class="age text-gray-400 text-xs">26</div>
+                  </div>
+                  <div class="maps flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      class="stroke-gray-400 size-3">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                    <div class="spacing text-gray-400 text-xs">500m</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-search hidden fixed z-20 top-12 left-0 right-0 ">
+      <div class="modal-body z-20 h-screen bg-gray-100 overflow-y-auto">
+        
+        <div class="block shadow bg-white w-full pt-2 mb-2 searching-object ">
+          <div class="container">
+            <div class="block-title uppercase font-medium text-sm">Đối tượng tìm kiếm</div>
+            <div class="block-content">
+              <div class="item py-4 border-b border-b-gray-200">
+                <div class="item-title flex items-center justify-between">
+                  <div class="label">
+                    <h4 class="font-medium">Giới tính</h4>
+                    <p class="text-xs text-gray-400">Tất cả</p>
+                  </div>
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="size-6">
+                      <rect width="24" height="24" class="fill-white" />
+                      <path d="M9.5 7L14.5 12L9.5 17" class="stroke-gray-400" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                </div>
+              </div>
+              <div class="item py-4">
+                <div class="item-title flex items-center justify-between">
+                  <div class="label">
+                    <h4 class="font-medium">Tuổi</h4>
+                    <p class="text-xs text-gray-400">15 - 80 tuổi</p>
+                  </div>
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="size-6">
+                      <rect width="24" height="24" class="fill-white" />
+                      <path d="M9.5 7L14.5 12L9.5 17" class="stroke-gray-400" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block shadow bg-white w-full pt-2  mb-2 searching-object ">
+          <div class="container">
+            <div class="block-title uppercase font-medium text-sm">Ai có thể tìm thấy bạn</div>
+            <div class="block-content">
+              <div class="item py-4">
+                <div class="item-title flex items-center justify-between">
+                  <div class="label">
+                    <h4 class="font-medium">Giới tính</h4>
+                    <p class="text-xs text-gray-400">Tất cả</p>
+                  </div>
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="size-6">
+                      <rect width="24" height="24" class="fill-white" />
+                      <path d="M9.5 7L14.5 12L9.5 17" class="stroke-gray-400" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="action-bottom">
+          <div class="flex gap-4 justify-center items-center mt-6">
+            <a href="#" class="btn btn-secondary">Đóng</a>
+            <a href="#" class="btn btn-primary">Cập nhật</a>
+          </div>
+          <div class="flex gap-4 justify-center items-center mt-6">
+            <a href="#" class="underline text-sm text-gray-400">Xoá vị trí để tránh làm phiền</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>

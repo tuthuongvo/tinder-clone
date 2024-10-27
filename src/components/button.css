@@ -1,0 +1,12 @@
+.btn {
+  @apply font-medium rounded-full text-sm px-6 py-2.5 text-center h-10 flex items-center justify-center;
+}
+.btn-primary {
+  @apply text-white bg-gradient-to-r from-blue-500 to-cyan-500;
+}
+.btn-secondary {
+  @apply bg-white border border-gray-300 text-gray-500;
+}
+.btn:disabled {
+  @apply opacity-[0.5];
+}

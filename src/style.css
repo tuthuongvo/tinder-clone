@@ -1,0 +1,17 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "./components/typography.css";
+@import "./components/header.css";
+@import "./components/theme.css";
+@import "./components/button.css";
+/* @import "./components/typography.css";
+@import "./components/theme.css";
+@import "./components/form.css";
+@import "./components/input.css";
+@import "./components/button.css";
+@import "./components/sidebar.css";
+@import "./components/pagination.css";
+@import "./components/radio.css";
+@import "./components/select.css"; */
