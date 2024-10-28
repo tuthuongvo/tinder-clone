@@ -1,16 +1,14 @@
 .container {
    @apply max-w-screen-lg w-full mx-auto px-3;
 }
-.cover-slider {
-    .slick-dots {
-        @apply absolute top-3 left-2/4 -translate-x-2/4 flex gap-4;
-        li {
-            @apply w-12 h-1 border border-white rounded-full bg-transparent text-[0px];
-        }
-        li.slick-active {
-            @apply bg-white;
-        }
-    }
+.cover-slider .slick-dots {
+    @apply absolute top-3 left-2/4 -translate-x-2/4 flex gap-4;
+}
+.cover-slider .slick-dots li {
+    @apply w-12 h-1 border border-white rounded-full bg-transparent text-[0px];
+}
+.cover-slider .slick-dots li.slick-active {
+    @apply bg-white;
 }
 .cover-slider:not(.slick-initialized) .item{
     @apply hidden;
