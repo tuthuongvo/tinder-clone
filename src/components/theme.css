@@ -16,3 +16,17 @@
 .cover-slider:not(.slick-initialized) .item:first-child{
     @apply block;
 }
+/* Slider range bar styling */
+#slider-range {
+    @apply h-2;
+}
+#slider-range .ui-slider-range {
+    @apply h-full rounded;
+    background: #3f83f8;
+}
+
+/* Slider handle styling */
+#slider-range .ui-slider-handle {
+    @apply w-5 h-5 border-2 -top-2 border-white rounded-full shadow-lg cursor-pointer;
+    background: #3f83f8;
+}

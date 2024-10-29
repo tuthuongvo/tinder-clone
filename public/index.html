@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tinder Clone</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -290,12 +291,12 @@
             <div class="block-title uppercase font-medium text-sm">Đối tượng tìm kiếm</div>
             <div class="block-content">
               <div class="item py-4 border-b border-b-gray-200">
-                <div class="item-title flex items-center justify-between">
+                <div class="item-title flex items-center justify-between cursor-pointer">
                   <div class="label">
                     <h4 class="font-medium">Giới tính</h4>
-                    <p class="text-xs text-gray-400">Tất cả</p>
+                    <p class="amount text-xs text-gray-400">Tất cả</p>
                   </div>
-                  <div class="icon">
+                  <div class="icon transition-transform duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="size-6">
                       <rect width="24" height="24" class="fill-white" />
                       <path d="M9.5 7L14.5 12L9.5 17" class="stroke-gray-400" stroke-linecap="round" stroke-linejoin="round" />
@@ -303,20 +304,43 @@
 
                   </div>
                 </div>
+                <div class="item-content hidden">
+                  <div class="flex mt-3">
+                    <div class="flex items-center me-4">
+                      <input checked id="inline-radio" class="radio-input" type="radio" value="Tất cả" name="inline-radio-group"
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
+                      <label for="inline-radio" class="ms-2 text-sm font-medium text-gray-900">Tất cả</label>
+                    </div>
+                    <div class="flex items-center me-4">
+                      <input id="inline-1-radio" class="radio-input" type="radio" value="Nam" name="inline-radio-group"
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
+                      <label for="inline-1-radio" class="ms-2 text-sm font-medium text-gray-900">Nam</label>
+                    </div>
+                    <div class="flex items-center me-4">
+                      <input id="inline-2-radio" class="radio-input" type="radio" value="Nữ" name="inline-radio-group"
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
+                      <label for="inline-2-radio" class="ms-2 text-sm font-medium text-gray-900">Nữ</label>
+                    </div>
+                  </div>
+
+                </div>
               </div>
               <div class="item py-4">
-                <div class="item-title flex items-center justify-between">
+                <div class="item-title flex items-center justify-between cursor-pointer">
                   <div class="label">
                     <h4 class="font-medium">Tuổi</h4>
-                    <p class="text-xs text-gray-400">15 - 80 tuổi</p>
+                    <input type="text" id="amount" class="text-xs text-gray-400" readonly />
                   </div>
-                  <div class="icon">
+                  <div class="icon transition-transform duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="size-6">
                       <rect width="24" height="24" class="fill-white" />
                       <path d="M9.5 7L14.5 12L9.5 17" class="stroke-gray-400" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
 
                   </div>
+                </div>
+                <div class="item-content hidden">
+                  <div id="slider-range" class="w-full mt-3"></div>
                 </div>
               </div>
             </div>
@@ -327,18 +351,38 @@
             <div class="block-title uppercase font-medium text-sm">Ai có thể tìm thấy bạn</div>
             <div class="block-content">
               <div class="item py-4">
-                <div class="item-title flex items-center justify-between">
+                <div class="item-title flex items-center justify-between cursor-pointer">
                   <div class="label">
                     <h4 class="font-medium">Giới tính</h4>
-                    <p class="text-xs text-gray-400">Tất cả</p>
+                    <p class="amount text-xs text-gray-400">Tất cả</p>
                   </div>
-                  <div class="icon">
+                  <div class="icon transition-transform duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="size-6">
                       <rect width="24" height="24" class="fill-white" />
                       <path d="M9.5 7L14.5 12L9.5 17" class="stroke-gray-400" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
 
                   </div>
+                </div>
+                <div class="item-content hidden">
+                  <div class="flex mt-3">
+                    <div class="flex items-center me-4">
+                      <input checked id="inline-other-1-radio" class="radio-input" type="radio" value="Tất cả" name="inline-other-radio-group"
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
+                      <label for="inline-other-1-radio" class="ms-2 text-sm font-medium text-gray-900">Tất cả</label>
+                    </div>
+                    <div class="flex items-center me-4">
+                      <input id="inline-other-2-radio" class="radio-input" type="radio" value="Nam" name="inline-other-radio-group"
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
+                      <label for="inline-other-2-radio" class="ms-2 text-sm font-medium text-gray-900">Nam</label>
+                    </div>
+                    <div class="flex items-center me-4">
+                      <input id="inline-other-3-radio" class="radio-input" type="radio" value="Nữ" name="inline-other-radio-group"
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
+                      <label for="inline-other-3-radio" class="ms-2 text-sm font-medium text-gray-900">Nữ</label>
+                    </div>
+                  </div>
+                
                 </div>
               </div>
             </div>
@@ -358,6 +402,7 @@
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 
