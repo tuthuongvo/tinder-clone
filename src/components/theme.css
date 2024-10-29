@@ -1,3 +1,6 @@
+body {
+    @apply overflow-x-hidden;
+}
 .container {
    @apply max-w-screen-lg w-full mx-auto px-3;
 }
