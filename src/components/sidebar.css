@@ -1,0 +1,70 @@
+.sidebar {
+  @apply max-w-[250px] w-full min-h-screen bg-white border-r border-solid border-primary transition-all duration-300;
+}
+.sidebar.active {
+  @apply max-w-16;
+}
+
+.sidebar.active .switch-tab {
+  @apply opacity-0;
+}
+.sidebar.active .account {
+    @apply px-3;
+}
+.sidebar.active .account-info {
+    @apply opacity-0;
+}
+.sidebar.active .main-nav ul li a {
+  font-size: 0;
+}
+.sidebar.active .logo-active {
+  @apply hidden;
+}
+.sidebar.active .logo-collaps {
+  @apply block;
+}
+.switch-tab ul {
+  @apply bg-gray-200 rounded-full;
+}
+.switch-tab ul li {
+  @apply leading-[44px] text-center bg-gray-200 rounded-full;
+}
+.switch-tab ul li.active {
+  background: linear-gradient(270deg, #cc8720 0%, #0a46cb 100%);
+  @apply text-white;
+}
+.main-nav ul li a {
+  @apply rounded-lg;
+}
+.main-nav ul li a.active,
+.main-nav ul li a:hover {
+  @apply text-white bg-primary-700;
+}
+.main-nav ul li a svg {
+  @apply stroke-gray-700 mr-2;
+}
+.main-nav ul li a.active svg,
+.main-nav ul li a:hover svg {
+  @apply stroke-white;
+}
+/* @media (max-width: 767px) {
+  .sidebar {
+    position: fixed;
+    top: 63px;
+    left: -100%;
+    z-index: 10;
+  }
+  .sidebar.active {
+    left: 0;
+    @apply max-w-[250px];
+  }
+  .sidebar.active .logo {
+    display: none;
+  }
+  .sidebar.active .switch-tab {
+    opacity: 1;
+  }
+  .sidebar.active .main-nav ul li a {
+    @apply text-sm;
+  }
+} */

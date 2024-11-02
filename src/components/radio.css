@@ -1,0 +1,36 @@
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  @apply absolute -left-full;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  @apply relative pl-7 cursor-pointer inline-block leading-5 text-gray-900;
+}
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: "";
+  @apply absolute left-0 top-0 w-5 h-5 border border-solid border-gray-300 rounded-full bg-gray-50;
+  /* transform: translateX(-50%); */
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: "";
+  @apply w-5 h-5 bg-white border-[3.5px] border-solid border-blue-600 absolute left-0 top-0 rounded-full;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  /* transform: translateX(-50%); */
+}
+[type="radio"]:not(:checked) + div:after,
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type="radio"]:checked + div:after,
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}

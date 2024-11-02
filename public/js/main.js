@@ -25,6 +25,11 @@ $(document).ready(function () {
       $(this).find(".icon").toggleClass("rotate-90");
     });
   }
+   const toggleMenu = function () {
+     $(".bugger-menu").click(function () {
+       $(".sidebar").toggleClass("active");
+     });
+   };
   if ($(".cover-slider").length) { 
     coverSlider();
   }
@@ -33,6 +38,7 @@ $(document).ready(function () {
   toggleSearch();
   closeModal();
   toggleFilter();
+  toggleMenu();
 });
 
   $(function () {
