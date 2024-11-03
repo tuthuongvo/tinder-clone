@@ -650,6 +650,9 @@ video {
   text-align: center;
 }body{
   overflow-x: hidden;
+}.page-wrapper{
+  position: relative;
+    padding-left: calc(4rem + 8px);
 }.content-wrapper {
   width: calc(100% - 260px);
   flex: 1 1 auto;
@@ -740,6 +743,10 @@ video {
 }.btn:disabled{
   opacity: 0.5;
 }.sidebar{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 30;
   min-height: 100vh;
   width: 100%;
   max-width: 250px;

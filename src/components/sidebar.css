@@ -1,5 +1,5 @@
 .sidebar {
-  @apply max-w-[250px] w-full min-h-screen bg-white border-r border-solid border-primary transition-all duration-300;
+  @apply absolute top-0 left-0 z-30 max-w-[250px] w-full min-h-screen bg-white border-r border-solid border-primary transition-all duration-300;
 }
 .sidebar.active {
   @apply max-w-16;

@@ -1,6 +1,10 @@
 body {
     @apply overflow-x-hidden;
 }
+.page-wrapper {
+    @apply relative;
+    padding-left: calc(4rem + 8px);
+}
 .content-wrapper {
   width: calc(100% - 260px);
   @apply flex-auto overflow-hidden rounded-md;
